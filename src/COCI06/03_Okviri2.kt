@@ -1,7 +1,3 @@
-const val MODULO = 42
-
-// https://dmoj.ca/problems/?search=COCI+%2706+Contest+1
-
 fun main(args: Array<String>) {
     val patternP1 = "..#.".toCharArray()
     val patternP2 = ".#.#".toCharArray()
@@ -9,7 +5,7 @@ fun main(args: Array<String>) {
 
     if(str.length > 15) throw Throwable("Invalid Length")
 
-   val strArray = Array(5) { charArrayOf() }
+    val strArray = Array(5) { charArrayOf() }
 
     str.forEach { c ->
         strArray[0] += patternP1
