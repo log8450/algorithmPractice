@@ -1,3 +1,5 @@
+//https://dmoj.ca/problem/coci06c1p3
+
 fun main(args: Array<String>) {
     val patternP1 = "..#."
     val patternP2 = ".#.#"

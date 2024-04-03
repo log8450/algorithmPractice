@@ -1,12 +1,14 @@
+https://dmoj.ca/problem/coci06c1p4
+
 fun main(args: Array<String>) {
     var map = readln()
-    val row = map.split(" ").first().toInt()
-    val col = map.split(" ").last().toInt()
-//
-//    var row = 3
-//    var col = 6
+    val row = map.split(" ").first().toIntOrNull()?: throw Throwable("Invalid Int")
+    val col = map.split(" ").last().toIntOrNull()?: throw Throwable("Invalid Int")
+
+    if(row>50 || col>50) throw Throwable("Invalid Size")
 
     var forestString = ""
+
     (0..<row).forEach { r ->
         forestString += readln()
     }

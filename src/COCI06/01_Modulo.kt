@@ -1,3 +1,5 @@
+//https://dmoj.ca/problem/coci06c1p1
+
 const val MODULO = 42
 
 fun main() {

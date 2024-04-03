@@ -1,3 +1,5 @@
+//https://dmoj.ca/problem/coci06c1p2
+
 fun main() {
     val number = readln().toIntOrNull() ?: throw Throwable("Invalid Number")
     if(number < 0 || number > 10000) throw Throwable("Invalid Range")
