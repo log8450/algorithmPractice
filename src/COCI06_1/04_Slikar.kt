@@ -1,4 +1,5 @@
-https://dmoj.ca/problem/coci06c1p4
+//https://dmoj.ca/problem/coci06c1p4
+//https://dmoj.ca/problems/?search=COCI+%2706+Contest+2
 
 fun main(args: Array<String>) {
     var map = readln()
@@ -29,6 +30,7 @@ fun main(args: Array<String>) {
     while(sList.isNotEmpty()) {
         val sTempList = sList.toList()
         count++
+        // 중간에 빠져나오는 루프는 any all 사용
         sTempList.forEach { s ->
             sList -= s
             forest[s] = 'A'
