@@ -1,9 +1,10 @@
-import kotlin.math.abs
+//https://dmoj.ca/problem/coci06c2p2
 
-const val MODULO = 42
-
-// https://dmoj.ca/problems/?search=COCI+%2706+Contest+1
-
+/**
+ * 입력받은 세개의 정수를 순서에 맞게 배열하는 문제
+ * A는 첫번째, B는 두번째, C는 세번째 정수이다
+ * 입력받은 정수를 정렬하고, 각각을 A,B,C의 순서에 할당한다
+ */
 fun main(args: Array<String>) {
     val numberList = readln().split(" ").map { it.toIntOrNull()?:throw Throwable("Invalid Input") }
 
