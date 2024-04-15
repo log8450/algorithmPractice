@@ -1,3 +1,5 @@
+//https://dmoj.ca/problem/coci06c2p3
+
 fun main(args: Array<String>) {
     val setting = readln()
     val ant1 = setting.split(" ").firstOrNull()?.toIntOrNull()?:throw Throwable("Invalid input")
@@ -11,8 +13,7 @@ fun main(args: Array<String>) {
 
     if(line1.length != ant1) throw Throwable("Invalid setting")
     if(line2.length != ant2) throw Throwable("Invalid setting")
-    if(line1.uppercase() != line1) throw Throwable("Invalid string")
-    if(line2.uppercase() != line2) throw Throwable("Invalid string")
+    if(line1.up)
 
     val cArr = CharArray(line.length) {'_'}
     line1.toCharArray().forEachIndexed { idx, c ->
