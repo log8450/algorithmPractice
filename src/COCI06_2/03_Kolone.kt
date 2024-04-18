@@ -8,12 +8,13 @@ fun main(args: Array<String>) {
     val line1 = readln()
     val line2 = readln()
 
-    val line = line1.reversed() + line2
+    val line = line1.reversed() + line2 // CBADEF
     val time = readln().toIntOrNull()?:throw Throwable("Invalid Time")
+
+    if(time < 0 || time > 50) throw Throwable("Invalid Time Range")
 
     if(line1.length != ant1) throw Throwable("Invalid setting")
     if(line2.length != ant2) throw Throwable("Invalid setting")
-    if(line1.up)
 
     val cArr = CharArray(line.length) {'_'}
     line1.toCharArray().forEachIndexed { idx, c ->
